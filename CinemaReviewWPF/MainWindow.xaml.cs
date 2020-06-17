@@ -22,6 +22,7 @@ namespace CinemaReviewWPF
     {
         public MainWindow()
         {
+            // Main function
             InitializeComponent();
         }
     }
