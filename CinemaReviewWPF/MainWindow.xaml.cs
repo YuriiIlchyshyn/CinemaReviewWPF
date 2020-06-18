@@ -25,5 +25,26 @@ namespace CinemaReviewWPF
             // Main function
             InitializeComponent();
         }
+
+        private void NewsButton_Click(object sender, RoutedEventArgs e)
+        {
+            NewsPage newsPage = new NewsPage();
+            newsPage.Show();
+            this.Close();
+        }
+
+        private void SignUpButton_Click(object sender, RoutedEventArgs e)
+        {
+            SignUpPage signUpPage = new SignUpPage();
+            signUpPage.Show();
+            this.Close();
+        }
+
+        private void SignInButton_Click(object sender, RoutedEventArgs e)
+        {
+            SignInPage signInPage = new SignInPage();
+            signInPage.Show();
+            this.Close();
+        }
     }
 }
