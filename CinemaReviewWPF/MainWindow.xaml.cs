@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -24,6 +26,13 @@ namespace CinemaReviewWPF
         {
             // Main function
             InitializeComponent();
+            VisualBrush visualBrush = new VisualBrush();
+            MediaElement background = new MediaElement();
+            background.Source = new Uri(Directory.GetCurrentDirectory() + "/background.wmv");
+            visualBrush.Visual = background;
+
+
+            BackgroundGrid.Background = visualBrush;
         }
 
         private void NewsButton_Click(object sender, RoutedEventArgs e)
