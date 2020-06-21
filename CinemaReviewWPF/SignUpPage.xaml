@@ -6,7 +6,16 @@
         xmlns:local="clr-namespace:CinemaReviewWPF"
         mc:Ignorable="d"
         Title="SignUpPage" Height="450" Width="800">
-    <Grid>
-        
+    <Grid x:Name="BackgroundGrid">
+        <TextBox x:Name="loginTxt" HorizontalAlignment="Left" Height="22" Margin="328,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" TextChanged="TextBox_TextChanged_2"/>
+        <Label Content="Create Password:" HorizontalAlignment="Left" Margin="329,158,0,0" VerticalAlignment="Top" Height="27" Width="106"/>
+        <PasswordBox x:Name="passwordTxt" HorizontalAlignment="Left" Margin="329,199,0,0" VerticalAlignment="Top" Width="174" Height="22"/>
+        <Button Content="Register" HorizontalAlignment="Left" Margin="331,313,0,0" VerticalAlignment="Top" Width="172" Click="Register_Button" Height="21"/>
+        <Label Content="Create Login:" HorizontalAlignment="Left" Margin="329,31,0,0" VerticalAlignment="Top" Height="27" Width="95"/>
+        <Label Content="Confirm Password:" HorizontalAlignment="Left" Margin="329,239,0,0" VerticalAlignment="Top" Height="27" Width="117"/>
+        <PasswordBox x:Name="confirmPasswordTxt" HorizontalAlignment="Left" Margin="329,271,0,0" VerticalAlignment="Top" Width="174" Height="22"/>
+        <Label Content="Enter Email:" HorizontalAlignment="Left" Margin="329,94,0,0" VerticalAlignment="Top" Height="27" Width="106"/>
+        <TextBox x:Name="emailTxt"  HorizontalAlignment="Left" Margin="329,126,0,0" VerticalAlignment="Top" Width="174" Height="22"/>
+
     </Grid>
 </Window>
